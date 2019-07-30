@@ -1,0 +1,64 @@
+
+/* the body of the page uses this kind of font and size and assigning color to the background */
+body {
+    font: 18px arial, sans-serif;
+    background: #eee;
+  }
+  
+  /* the id called animals has a width of 70% */
+  #animals {
+    width: 70%;
+  }
+  
+  /*the class called animal-item will appear on the left and has a padding of 10px */
+  .animal-item {
+    float: left;
+    padding: 10px;
+  }
+  
+  /*the form section will appear on the right, and has a width of 30 % of the entire width of the page*/
+  form {
+    float: right;
+    width: 30%;
+    padding: 20px;
+  }
+  
+  /* the orientation of the display will be in block form and has the bottom margin of 10 px and the text in it will have a font boldness of 700*/
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  /*the input part is in text format and has the entire width of this portion and with the specified spec*/
+  input[type="text"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* the input button has the following characteristic and features*/
+  button,
+  input[type="submit"] {
+    padding: 5px 20px;
+    margin: 0 10px 10px 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #659a98;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #bbb;
+  }
+  
+  /* this is a hover button, when user's cursor hovers on the button, it will show the assigned color*/
+  button:hover,
+  input[type="submit"]:hover {
+    background: #334e4d;
+  }
+  /* specify that the button is live/active and has a certain color*/
+  button.active {
+    background: #334e4d;
+  }
+  
