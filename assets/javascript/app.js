@@ -26,7 +26,6 @@ $(document).ready(function() {
 //appending button to specified 'areaToAddTo location at the end of the array 
 		$(areaToAddTo).append(a);
 	  }
-// "<button class='classtoAdd' type='rabbit'>rabbit</button>"
 	}
 //listening for click event on anything that belongs to class animal button
 	$(document).on("click", ".animal-button", function() {
