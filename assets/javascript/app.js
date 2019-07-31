@@ -55,23 +55,23 @@ $(document).ready(function() {
   		  for (var i = 0; i < results.length; i++) {
 // make a new div with class 'animal-item' and assigning it to the variable animalDiv
 			var animalDiv = $("<div class=\"animal-item\">");
-// storing the result item's rating
+// storing the result item's rating of the ith object in variable 'rating'
 			var rating = results[i].rating;
-// creating a paragraph tag with the result item's rating
+// creating a paragraph tag with the result item's rating and storing the results in a variable called p
 			var p = $("<p>").text("Rating: " + rating);
-//giving the image tag an src attribute of a property from the result item 
+//giving the image tag an src attribute of a property from the result item of the ith location and storing the result in a variable called animated
 			var animated = results[i].images.fixed_height.url;
 // obtained the still images url and store them in a variable called 'still'
 			var still = results[i].images.fixed_height_still.url;
 // image tag created is stored in the variable animalImage
 			var animalImage = $("<img>");
-// setting the animalImage src attribute to still if the variable state is still
+// setting the animalImage src attribute to still if the variable state is still, url for the still image is store here
 			animalImage.attr("src", still);
-// update image's src attribute to still or what its data-animate value is
+// update image's src attribute to still or what its data-animate value is, 
 			animalImage.attr("data-still", still);
 //update data-state attribute to 'animate'
 			animalImage.attr("data-animate", animated);
-//update data-state attribute to 'still'
+//update data-state attribute to 'still' upon initial loading
 			animalImage.attr("data-state", "still");
 // adding the animal images with class of 'animal-image' 
 			animalImage.addClass("animal-image");
@@ -90,7 +90,7 @@ $(document).ready(function() {
 	  var state = $(this).attr("data-state");
 //check to see if gif is still or animated, if still, click to animate
 	  if (state === "still") {
-//selecting the html object(button) using $(this) and reassign the src attribute to the value of the data animate attribute
+//selecting the html object(button) using $(this) and reassign the src attribute to the value of the data animate attribute 
 		$(this).attr("src", $(this).attr("data-animate"));
 //selecting the button click and reassign the data-state attribute and set it equal to animate
 		$(this).attr("data-state", "animate");
